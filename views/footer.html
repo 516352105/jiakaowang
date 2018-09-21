@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>模拟考试</title>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <style>
+        .footer1 {
+            background: #222;
+            margin-top: 60px;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .footer1 ul {
+            list-style: none;
+        }
+
+        .active {
+            color: #fff;
+        }
+
+        .footer1 .head li {
+            display: inline-block;
+            width: auto !important;
+            margin-right: 40px;
+            font-size: 16px;
+            font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            position: relative;
+            top: 1px;
+            color: #666;
+            border: none;
+            cursor: default;
+        }
+
+        .middle {
+            margin-top: 30px;
+            margin-left: -20px;
+            width: 1270px;
+        }
+
+        .middle li {
+            display: inline-block;
+            max-width: 200px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+            display: inline-block;
+            font-size: 14px;
+            font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .middle a {
+            text-decoration: none;
+            color: #999;
+        }
+
+        .middle a:hover {
+            text-decoration: underline;
+        }
+
+        .footer2 {
+            height: 108px;
+            width: 1200px;
+            padding-top: 25px;
+            margin: 0 auto;
+            padding-bottom: 18px;
+            overflow: hidden;
+        }
+
+        .footer2 .left {
+            float: left;
+            margin-left: 180px;
+            padding-right: 70px;
+            border-right: 1px solid #666;
+            width: 232px;
+            height: 108px;
+        }
+
+        .footer2 .left img {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        .right {
+            margin-top: 10px;
+            float: left;
+            margin-left: 80px;
+            height: 108px;
+            font-size: 14px;
+        }
+
+        .right ul {
+            float: left;
+            margin-left: -5px;
+            color: #fff;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .right ul li {
+            float: left;
+            vertical-align: middle;
+            line-height: 22px;
+        }
+
+        .right ul a:hover {
+            color: cornflowerblue;
+        }
+
+        .right .bd-line {
+            height: 12px;
+            width: 1px;
+            background: #666;
+            position: relative;
+            top: 6px;
+        }
+
+        .right ul a {
+            color: #fff;
+            padding: 0 10px;
+            cursor: pointer;
+            font-size: inherit;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .right p {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+        .foot{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer1">
+        <div class="foot">
+        <ul class="head">
+            <li><span class="active">热门驾校</span></li>
+            <li><span>周边驾校</span></li>
+            <li><span>热门推荐</span></li>
+        </ul>
+        <ul class="middle">
+            <li><a href="">广东驾校</a></li>
+            <li><a href="">东方驾校</a></li>
+            <li><a href="">八一驾校</a></li>
+            <li><a href="">京西驾校</a></li>
+            <li><a href="">新亚驾校</a></li>
+            <li><a href="">足利驾校</a></li>
+            <li><a href="">通略驾校</a></li>
+            <li><a href="">汇通驾校</a></li>
+            <li><a href="">立秋驾校</a></li>
+            <li><a href="">龙泉驾校</a></li>
+            <li><a href="">安通驾校</a></li>
+            <li><a href="">丰顺驾校</a></li>
+            <li><a href="">港深通驾校</a></li>
+            <li><a href="">绅宝驾校</a></li>
+            <li><a href="">白云驾校</a></li>
+            <li><a href="">北方驾校</a></li>
+            <li><a href="">安顺驾校</a></li>
+            <li><a href="">天欣驾校</a></li>
+            <li><a href="">综安驾校</a></li>
+            <li><a href="">金盾驾校</a></li>
+            <li><a href="">创元驾校</a></li>
+            <li><a href="">京东驾校</a></li>
+            <li><a href="">狮麟驾校</a></li>
+            <li><a href="">金龙驾校</a></li>
+            <li><a href="">蓝天驾校</a></li>
+            <li><a href="">东方时尚驾校</a></li>
+            <li><a href="">正直驾校</a></li>
+            <li><a href="">广仁驾校</a></li>
+            <li><a href="">荣臣驾校</a></li>
+            <li><a href="">天保驾校</a></li>
+        </ul>
+    </div>
+        <div class="footer2">
+            <div class="left">
+                <img src="../static/img/logo.png">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li class="bd-line"></li>
+                    <li><a href="">核心产品</a></li>
+                    <li class="bd-line"></li>
+                    <li><a href="">商务合作</a></li>
+                    <li class="bd-line"></li>
+                    <li><a href="">提交漏洞</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <p>地址：北京市海淀区知春路6号锦秋国际大厦B座5层 电话：400-056-1617</p>
+                <p>Copyright © 2017 北京木仓科技股份有限公司版权所有 京ICP备11009001号-17</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/layui/layui.all.js"></script>
+    <script src="/js/userlogin.js"></script>
+    
+    
+    
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+        })
+    </script>
+    
+    
+    
+    </body>
+    
+    </html>

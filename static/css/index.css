@@ -1,0 +1,173 @@
+.layui-carousel{
+    height: 380px;
+}
+.carousel-inner img{
+    height: 380px;
+    /* width: 1550px; */
+}
+.slide{
+    margin-top: -16px;
+}
+.liuc{
+    width: 280px !important;
+    height: 335px;
+    position: absolute !important;
+    top: 27px;
+    left: 154px;
+    background-color: aliceblue;
+    opacity: 0.7;
+}
+.liuc p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    /* height: 50px;
+    line-height: 50px; */
+    /* margin-top: 10px; */
+}
+.liuc ul{
+    border-top: 1px solid rgb(192, 189, 189);
+    padding-top: 10px;
+}
+
+.liuc ul li:nth-child(2n){
+    font-size: 14px;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+.liuc ul li:nth-child(2n+1){
+    font-size: 18px;
+    text-align: center;
+    color: rgb(59, 59, 175);
+    height: 33px;
+    line-height: 33px;
+}
+.liuc ul .li1{
+    background-image: url('/img/zhu5.png');
+    background-repeat: no-repeat;
+    background-position: 27px -0px;
+    
+}
+.liuc ul .li2{
+    background-image: url('/img/zhu6.png');
+    background-repeat: no-repeat;
+    background-position: 27px -0px;
+    
+}
+.liuc ul .li3{
+    background-image: url('/img/zhu7.png');
+    background-repeat: no-repeat;
+    background-position: 27px -0px;
+    
+}
+.liuc ul .li4{
+    background-image: url('/img/zhu8.png');
+    background-repeat: no-repeat;
+    background-position: 27px -0px;
+    
+}
+.lilun{
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 55px 0;
+}
+.ul1{
+    width: 527px;
+    height: 428px;
+    border: 1px solid rgb(235, 233, 233);
+    display: inline-block;
+    
+}
+.ul2{
+    margin-left: 51px;
+}
+
+.container .ul1 li{
+    text-align: center;
+    /* line-height: 70px; */
+    display: inline-block;
+    
+}
+.container .ul1 .li5 {
+    width: 578px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 20px;
+    background-image: url('/img/zhu9.png');
+    background-repeat: no-repeat;
+    background-position: 112px 42px;
+}
+.container .ul2 .li5{
+    background-position: 93px 42px;
+}
+.container .ul1 a{
+    color: grey;
+    font-size: 20px;
+}
+.container .ul1  span{
+    font-size: 14px;
+    color: gray;
+}
+.container .ul1 .li6{
+    width: 250px;
+    height: 60px;
+    background-image: url('/img/zhu10.png');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    margin-left: 10px;
+}
+.container .ul1 .li7{
+    width: 250px;
+    height: 60px;
+    background-image: url('/img/zhu11.png');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    margin-left: 10px;
+}
+.container .ul1 .li8{
+    width: 250px;
+    height: 60px;
+    background-image: url('/img/zhu9.png');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.container .ul1 .li9{
+    width: 250px;
+    height: 60px;
+    background-image: url('/img/zhu12.png');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    margin-left: 10px;
+}
+.container .ul1 .li10 {
+    width: 527px;
+    height: 91px;
+    
+}
+.container .ul1 .li10 div{
+    width: 300px;
+    height: 46px;
+    background-color: rgb(84, 84, 223);
+    margin-top: 50px;
+}
+.lo{
+    position: relative;
+    /* right: 0px; */
+    left: 850px;
+}
+.carousel-item{
+    overflow: hidden;
+}
+.carousel-item img{
+    position: relative;
+    left: -215px;
+}

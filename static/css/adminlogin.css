@@ -1,0 +1,23 @@
+#form {
+    width: 420px;
+    margin: 50px auto;
+}
+.coder{
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+.layui-input-inline{
+    display: inline-block;
+}
+.u{
+    color: red !important;
+}
+.p{
+    color: red !important;
+}
+.title{
+    text-align: center;
+    position: relative;
+    left: -14px;
+}
