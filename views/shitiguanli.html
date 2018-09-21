@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>模拟考试</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        .logo {
+            margin: 20px 20px;
+        }
+
+        .layui-nav {
+            padding: 0px;
+        }
+
+        .layui-fluid {
+            padding: 0px;
+        }
+
+        .crumb {
+            margin: 20px 20px;
+            line-height: 20px;
+            font-size: 12px;
+            font-family: "Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #999;
+        }
+        .ke4{
+            color: #333;
+        }
+        .sy{
+           color: #999;
+        }
+        
+        .ABCD {
+            width: 40%;
+            display: inline-block;
+            margin-left: 65px;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <img src="../static/img/logo.png" class="logo">
+        <ul class="layui-nav layui-bg-blue posi" lay-filter="">
+            <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+            <li class="layui-nav-item"><a href="">模拟考试</a></li>
+            <li class="layui-nav-item"><a href="">科目一</a></li>
+            <li class="layui-nav-item"><a href="">科目四</a></li>
+            <li class="layui-nav-item"><a href="">个人中心</a></li>
+            <li class="layui-nav-item"><a href="">退出</a></li>
+        </ul>
+    </div>
+
+
+    <div class="layui-main">
+        <div class="crumb">
+            <span>
+                当前位置：
+            </span>
+            <a href="" class="sy">试题管理</a>
+            <i>></i>
+            <strong class="ke4">科目一</strong>
+            <i>></i>
+            <a class="sy">科目四</a>
+        </div>
+        <table class="layui-table  mytable catelist">
+            <colgroup>
+                <col width="50">
+                <col width="500">
+                <col width="100">
+                <col width="60">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>操作人</th>
+                    <th>题目</th>
+                    <th>正确答案</th>
+                    <th>添加时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let c of questions){ %>
+                <tr>
+                    <td>
+                        <%=c.operator%>
+                    </td>
+                    <td>
+                        <%-c.k1name.replace(/<\/?.+?>/g, '').substring(0, 200)%>
+                    </td>
+                    <td>
+                        <%=c.k1ans%>
+                    </td>
+                    <td>
+                        <%=c.lasttimes.toLocaleString()%>
+                    </td>
+                    <td>
+                        <a href="###" class="delques" qid="<%=c.qid%>">删除</a>
+                        |
+                        <a href="/admin/updateques?qid=<%=c.qid%>">修改</a>
+                    </td>
+                </tr>
+                <%}%>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../static/layui/layui.all.js"></script>
+</body>
+
+</html>

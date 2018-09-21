@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>模拟考试</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        .logo {
+            margin: 20px 20px;
+        }
+        .layui-nav {
+            padding: 0px;
+        }
+        .layui-fluid {
+            padding: 0px;
+        }
+        .crumb {
+            margin: 20px 20px;
+            line-height: 20px;
+            font-size: 12px;
+            font-family: "Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #999;
+        }
+        .ke4{
+            color: #333;
+        }
+        .sy{
+           color: #999;
+        }
+        
+        .ABCD {
+            width: 40%;
+            display: inline-block;
+            margin-left: 65px;
+        }
+        .type {
+            margin-left: 65px;
+        }
+        .wenzitiaozheng {
+            padding: 30px 115px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <img src="../static/img/logo.png" class="logo">
+        <ul class="layui-nav layui-bg-blue posi" lay-filter="">
+            <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+            <li class="layui-nav-item"><a href="">模拟考试</a></li>
+            <li class="layui-nav-item"><a href="">科目一</a></li>
+            <li class="layui-nav-item"><a href="">科目四</a></li>
+            <li class="layui-nav-item"><a href="">个人中心</a></li>
+            <li class="layui-nav-item"><a href="">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-main">
+        <div class="crumb">
+            <span>
+                当前位置：
+            </span>
+            <a href="" class="sy">试题管理</a>
+            <i>></i>
+            <strong class="ke4">试题添加</strong>
+        </div>
+
+        <form id="add" class="layui-form" action="">
+            <p class="wenzitiaozheng">题目:</p>
+            <div class="layui-form-item layui-form-text">
+                <div class="layui-input-block timu">
+                    <textarea id="timu" name="timu" style="display:none" required lay-verify="required" placeholder="请输入内容"
+                        class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item ABCD">
+                <label class="layui-form-label">A、</label>
+                <div class="layui-input-block">
+                    <input type="text" name="optA" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                        class="layui-input optionA">
+                </div>
+            </div>
+
+            <div class="layui-form-item ABCD">
+                <label class="layui-form-label">B、</label>
+                <div class="layui-input-block">
+                    <input type="text" name="optB" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                        class="layui-input optionB">
+                </div>
+            </div>
+
+            <div class="layui-form-item ABCD">
+                <label class="layui-form-label">C、</label>
+                <div class="layui-input-block">
+                    <input type="text" name="optC" placeholder="请输入标题" autocomplete="off" class="layui-input optionC">
+                </div>
+            </div>
+
+            <div class="layui-form-item ABCD">
+                <label class="layui-form-label">D、</label>
+                <div class="layui-input-block">
+                    <input type="text" name="optD" placeholder="请输入标题" autocomplete="off" class="layui-input optionD">
+                </div>
+            </div>
+
+            <div class="layui-form-item type">
+                <label class="layui-form-label">正确选项:</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="ans" value="A" title="A" checked>
+                    <input type="radio" name="ans" value="B" title="B">
+                    <input type="radio" name="ans" value="C" title="C">
+                    <input type="radio" name="ans" value="D" title="D">
+                </div>
+            </div>
+
+            <div class="layui-form-item type">
+                <label class="layui-form-label">科目类型:</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="type" value="1" title="科目一" checked>
+                    <input type="radio" name="type" value="4" title="科目四">
+
+                </div>
+            </div>
+
+            <p class="wenzitiaozheng">解析:</p>
+            <div class="layui-form-item layui-form-text">
+                <div class="layui-input-block jiexi">
+                    <textarea id="jiexi" name="jiexi" style="display:none" placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="button" class="layui-btn" lay-submit lay-filter="formDemo" id="submit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary" id="reset">重置</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+    <script src="http://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var E = window.wangEditor;
+            // 题干的编辑器
+            var timu = new E('.timu');
+            // 配置服务器端地址
+            timu.customConfig.uploadImgServer = '/uploads';
+            timu.customConfig.uploadFileName = 'images';
+            // 同步内容到textarea
+            var timueditor = $('#timu');
+            timu.customConfig.onchange = function (html) {
+                timueditor.val(html);
+            }
+            timu.create();
+
+            // 试题答案
+            var jiexi = new E('.jiexi');
+            // 配置服务器端地址
+            jiexi.customConfig.uploadImgServer = '/uploads';
+            jiexi.customConfig.uploadFileName = 'images';
+            // 同步内容到textarea
+            var jiexieditor = $('#jiexi');
+            jiexi.customConfig.onchange = function (html) {
+                jiexieditor.val(html);
+            }
+            jiexi.create();
+            //试题分析的编辑器
+
+            $('#reset').on('click', function () {
+                timu.txt.clear()
+                jiexi.txt.clear()
+            })
+        }
+    </script>
+    <script src="../static/js/addshitiQ.js"></script>
+
+
+
+    <script src="../static/layui/layui.all.js"></script>
+</body>
+
+</html>

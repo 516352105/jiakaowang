@@ -1,4 +1,5 @@
 /*各种模块 */
+const async = require('async');
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
