@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+}
+
+ul li {
+	list-style: none;
+}
+
+.common-channel-crumb {
+	margin: 20px 0;
+	color: #999
+}
+
+.common-channel-crumb>strong {
+	color: #666;
+}
+
+.ass {
+	background: transparent;
+}
+.left{
+	width: 900px;
+	margin:0 100px;
+}
+.header {
+	background: #f7f7f7;
+	margin-top: 30px;
+	padding: 26px 35px;
+}
+
+.header h1 {
+	text-align: center;
+}
+
+.tiku_menu {
+	height: 340px;
+}
+
+.menu_list {
+	height: 340px;
+}
+
+.menu_list>li {
+	float: left;
+	margin: 20px 20px 0 0px;
+	display: inline-block;
+}
+
+.menu_list>li>a {
+	display: block;
+	width: 193px;
+	height: 62px;
+	padding-top: 90px;
+	text-align: center;
+	background-color: #f7f7f7;
+	font-size: 16px;
+	font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.menu_list>li .icon0 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/e02e7c9e59e9b96e22135c7f0b326e10.png) center top 50px no-repeat #f7f7f7;
+}
+
+.menu_list>li .icon1 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/5ec257486300154986b6c5427add4df5.png) center top 50px no-repeat #f7f7f7;
+}
+
+.menu_list>li .icon2 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/5182bb9d9295c0a51cb2785c891ce9cc.png) center top 50px no-repeat #f7f7f7;
+}
+
+.menu_list>li .icon3 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/504d2579e7c5151cb94aa3870a053e4f.png) center top 50px no-repeat #f7f7f7;
+}
+
+.menu_list>li .icon4 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/83cd64baa58803507795fc8c71c96ced.png) center top 50px no-repeat #f7f7f7;
+}
+
+.menu_list>li .icon5 {
+	background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/77f03ab7c1c3d6b7ef1b03327125ff30.png) center top 50px no-repeat #f7f7f7;
+}
+
+.ksyy-entry {
+	padding-bottom: 19px;
+	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 40px;
+	overflow: hidden;
+	display: block;
+	margin-top: 50px;
+}
+
+.ksyy-left {
+	    float: left;
+    margin-right: 12px;
+    width: 75px;
+    height: 75px;
+    background: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/f2d610fdbcd3b7d153065ed9c041926b.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.ksyy-entry .ksyy-right-title {
+    font-size: 20px;
+    color: #333;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.ksyy-entry .ksyy-right-detail {
+    font-size: 16px;
+    color: #333;
+    line-height: 16px;
+}
+.container .news-page .frame-l-r>.right .com-part {
+    margin-bottom: 40px;
+}
+.container .frame-l-r>.right .com-part {
+    margin: 20px 0;
+}
+.container .news-page .frame-l-r>.right .com-part>.part-title {
+    line-height: 22px;
+    padding-left: 0;
+    background-color: transparent;
+}
+.com-part>.part-title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 20px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.more {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB","Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #999;
+    }
+    .com-side-roadsign>.list-w, .com-side-roadsign>.list-w>li {
+    margin: 15px 0;
+    }
+    .com-side-roadsign>.list-w>li>.icon {
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.com-side-roadsign>.list-w>li>a {
+    display: block;
+    line-height: 40px;
+    padding-left: 50px;
+}
+.com-side-roadsign>.list-w>li>.icon.icon1 {
+    background-image: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/502178fb16d3263dd19afb5edf1211f9.png);
+}
+.com-side-roadsign>.list-w>li>.icon.icon2 {
+    background-image: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/30739adcfcdc66e3cc90619859c84c58.png);
+}
+.com-side-roadsign>.list-w>li>.icon.icon3 {
+    background-image: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/da03d111f2d25ec6a87f75ab481a18d9.png);
+}
+.com-side-roadsign>.list-w>li>.icon.icon4 {
+    background-image: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/1e3d95000e418ab47002dd010e514763.png);
+}
+.com-side-roadsign>.list-w>li>.icon.icon5 {
+    background-image: url(http://www.jiakaobaodian.com/core-assets/jiakao/application/mnks/kemu1-4/files/206ef39199ef1b690d6b6503dcbb3448.png);
+}
+
+
+
+    .footer1 {
+            background: #222;
+            margin-top: 60px;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .footer1 ul {
+            list-style: none;
+        }
+
+        .active {
+            color: #fff;
+        }
+
+        .footer1 .head li {
+            display: inline-block;
+            width: auto !important;
+            margin-right: 40px;
+            font-size: 16px;
+            font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            position: relative;
+            top: 1px;
+            color: #666;
+            border: none;
+            cursor: default;
+        }
+
+        .middle {
+            margin-top: 30px;
+            margin-left: -20px;
+            width: 1270px;
+        }
+
+        .middle li {
+            display: inline-block;
+            max-width: 200px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+            display: inline-block;
+            font-size: 14px;
+            font-family: "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .middle a {
+            text-decoration: none;
+            color: #999;
+        }
+
+        .middle a:hover {
+            text-decoration: underline;
+        }
+
+        .footer2 {
+            height: 108px;
+            width: 1200px;
+            padding-top: 25px;
+            margin: 0 auto;
+            padding-bottom: 18px;
+            overflow: hidden;
+        }
+
+        .footer2 .left {
+            float: left;
+            margin-left: 180px;
+            padding-right: 70px;
+            border-right: 1px solid #666;
+            width: 232px;
+            height: 108px;
+        }
+
+        .footer2 .left img {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        .right {
+            margin-top: 10px;
+            float: left;
+            margin-left: 80px;
+            height: 108px;
+            font-size: 14px;
+        }
+
+        .right ul {
+            float: left;
+            margin-left: -5px;
+            color: #fff;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .right ul li {
+            float: left;
+            vertical-align: middle;
+            line-height: 22px;
+        }
+
+        .right ul a:hover {
+            color: cornflowerblue;
+        }
+
+        .right .bd-line {
+            height: 12px;
+            width: 1px;
+            background: #666;
+            position: relative;
+            top: 6px;
+        }
+
+        .right ul a {
+            color: #fff;
+            padding: 0 10px;
+            cursor: pointer;
+            font-size: inherit;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .right p {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+        .foot{
+            margin-top: 20px;
+            margin-left: 30px;
+        }

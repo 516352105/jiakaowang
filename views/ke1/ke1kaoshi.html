@@ -1,0 +1,101 @@
+<% include head.html%>
+<link rel="stylesheet" type="text/css" href="/css/ke1kaoshi.css" />
+<div class="layui-fluid">
+	<div class="common-channel-crumb">
+		<span>当前位置：</span>
+		<a href="http://www.jiakaobaodian.com/">首页</a>
+		<i class="layui-icon layui-icon-right"></i>
+		<a href="/mnks/car-beijing.html">模拟考试</a>
+		<i class="layui-icon layui-icon-right"></i>
+		<a href="/mnks/car-beijing.html">科目一</a>
+		<i class="layui-icon layui-icon-right"></i>
+		<strong>顺序练习</strong>
+	</div>
+
+	<div class="main">
+		<div class="ti">
+			<div class="timu">
+				<p class="imu_text">3/1325、机动车驾驶人造成事故后逃逸构成犯罪的，吊销驾驶证且多长时间不得重新取得驾驶证？</p>
+				<hr class="layui-bg-blue">
+
+
+			</div>
+			<div class="option">
+				<p class="A">A.10年内</p>
+				<p class="B">B.20年内</p>
+				<p class="C">C.终生</p>
+				<p class="D">D.5年内</p>
+			</div>
+			<hr class="layui-bg-blue">
+		</div>
+
+		<div class="zhushi">
+			<span id="">
+				单选题，请选择你认为正确的答案！
+			</span>
+		</div>
+
+	</div>
+
+	<div class="tool_bar">
+		<div class="fanye">
+			<button class="layui-btn layui-btn-normal pre">上一题</button>
+			<button class="layui-btn layui-btn-normal next">下一题</button>
+			<button class="btn-shoucang layui-btn " ref="shoucang">收藏</button>
+		</div>
+		<div class="msg_bar">
+			<label class="daduinext left"><input type="checkbox" checked="" class="checkbox-next"><span>&nbsp;答对自动下一题</span></label>
+			<span class="left"><span class="gray">答对：</span><span class="count-right" ref="xianshidatika">0&nbsp;题</span></span>
+			<span class="left"><span class="gray">答错：</span><span class="count-wrong" ref="xianshidatika">0&nbsp;题</span></span>
+			<span class="left"><span class="gray">正确率：</span>0%</span>
+
+		</div>
+
+		<div class="jiexi">
+
+			<div class="layui-collapse" style="width: 650px;">
+				<div class="layui-colla-item" style="width: 650px;">
+					<h2 class="layui-colla-title">详情</h2>
+					<div class="layui-colla-content layui-show jiexi_text">
+						<p>《道路交通安全法》第一百零一条：<br>造成交通事故后逃逸的，由公安机关交通管理部门吊销机动车驾驶证，且终生不得重新取得机动车驾驶证。</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+	<div class="img">
+		
+			
+		</div>
+		
+	</div>
+	<% include footer.html%>
+	<script src="/layui/layui.all.js"></script>
+
+	<script type="text/javascript">
+		var answer = 'B';
+		var option = $('.option')
+		option.on('click', 'p', function() {
+			if($(this).attr('class') == answer) {
+				$(this).addClass('success')
+				option.off('click', 'p')
+				return
+			} else {
+				$(this).addClass('error')
+				$('.' + answer).addClass('success')
+				console.log($(this))
+				option.off('click', 'p')
+				return
+			}
+		})
+
+		layui.use('element', function() {
+			var element = layui.element;
+
+			//…
+		});
+	</script>
